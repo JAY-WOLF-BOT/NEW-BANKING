@@ -14,15 +14,15 @@
             <div class="row head">
                 <b class="bal">BALANCE</b>
                 <b class="int">INTREST</b>
-                  <input type="text" class="text" value="***************">
+                  <input type="text" class="text" id="result-balance" ">
                   <input type="button" class="btn" value="BAL" onclick="balbtn()">
-                  <input type="text" class="text" value="***************">
+                  <input type="text" class="text" id="result-intrest" >
                   <input type="button" class="btn" value="INT" onclick="intbtn()">
             </div>
             <div class="row ">
                 <div class="container distribution" >
-                   <b>SAVINGS</b><input type="text" class="save"><br>
-                   <b>INVESTMENTS</b><input type="text" class="invest"><br>
+                   <b>SAVINGS</b><input type="text" class="save" id="savings"><br>
+                   <b>INVESTMENTS</b><input type="text" class="invest" id="invest"><br>
                    <b>PROFITS</b><input type="text" class="profit">
                 </div>
                 <div class="container profile">
@@ -41,17 +41,18 @@
             <div class="row container deposite">
                 <h1>DEPOSITE</h1> 
                  <b>amount</b><br>
-                 <input type="text" class="amount"><br>
+                 <input type="text" class="amount" id="amount"><br>
                  <b>number</b><br>
-                 <input type="text" class="number2"><br>
+                 <input type="text" class="number2" id="number"><br>
                  <b>password</b><br>
-                 <input type="password" class="password">
-                 <input type="password" class="password">
+                 <input type="password" class="password" id="pass1"> 
+                 <input type="password" class="password" id="pass2"> 
                    <br><br>
-                 <input type="button" value="DEPOSITE" class="depo-btn">  
+                 <input type="button" value="DEPOSITE" class="depo-btn" onclick="deposite()">  
             </div>
         </div>
     </div>
 </div>
+<script src="bank.js"></script>
 </body>
 </html>
